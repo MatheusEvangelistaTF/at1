@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(){
+    char texto[11];
+
+    printf("Digite uma palavra com até 10 letras: ");
+    fgets(texto, sizeof(texto), stdin);
+
+    printf("Você digitou: %s\n", texto);
+
+    return 0;
+}
