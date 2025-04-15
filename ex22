@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(){
+    float R1, R2, Req;
+
+    printf("Digite o valor da resistência R1 (em ohms): ");
+    scanf("%f", &R1);
+
+    printf("Digite o valor da resistência R2 (em ohms): ");
+    scanf("%f", &R2);
+
+    if (R1 <= 0 || R2 <= 0){
+        printf("Os valores de resistência devem ser maiores que zero.\n");
+        return 1;
+    }
+
+    Req = (R1 * R2) / (R1 + R2);
+
+    printf("A resistência equivalente em paralelo é: %.2f ohms\n", Req);
+
+    return 0;
+}
