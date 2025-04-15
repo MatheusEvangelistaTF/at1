@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    char letra;
+
+    printf("Digite uma vogal: ");
+    scanf(" %c", &letra); 
+
+    if (letra == 'o' || letra == 'O') {
+        printf("Você digitou a vogal 'o'.\n");
+    } else if (letra == 'e' || letra == 'E') {
+        printf("Você digitou a vogal 'e'.\n");
+    } else {
+        printf("Você digitou outra letra, não é 'o' nem 'e'.\n");
+    }
+
+    return 0;
+}
