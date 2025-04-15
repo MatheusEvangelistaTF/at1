@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(){
+    int num1, num2;
+
+    printf("Digite o primeiro número inteiro (dividendo): ");
+    scanf("%d", &num1);
+
+    printf("Digite o segundo número inteiro (divisor): ");
+    scanf("%d", &num2);
+
+    if (num2 == 0){
+        printf("Divisão por zero não é permitida.\n");
+        return 1;
+    }
+
+    if (num1 % num2 == 0){
+        int resultado = num1 / num2;
+        printf("Resultado da divisão inteira: %d\n", resultado);
+    } else {
+        printf("A divisão de %d por %d não resulta em um número inteiro.\n", num1, num2);
+    }
+
+    return 0;
+}
