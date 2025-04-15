@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main(){
+    char genero;
+    float altura, media;
+
+    printf("Digite seu gênero (M para masculino, F para feminino): ");
+    scanf(" %c", &genero); 
+
+    printf("Digite sua altura em metros (ex: 1.70): ");
+    scanf("%f", &altura);
+
+    if (genero == 'M' || genero == 'm') {
+        media = 1.75;
+    } else if (genero == 'F' || genero == 'f') {
+        media = 1.62;
+    } else {
+        printf("Gênero inválido. Use 'M' ou 'F'.\n");
+        return 0;
+    }
+
+    if (altura > media) {
+        printf("Você está acima da altura média nacional para seu gênero.\n");
+    } else if (altura < media) {
+        printf("Você está abaixo da altura média nacional para seu gênero.\n");
+    } else {
+        printf("Você está exatamente na altura média nacional para seu gênero.\n");
+    }
+
+    return 0;
+}
