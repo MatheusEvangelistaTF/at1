@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main(){
+    int num1, num2, num3, num4;
+    int soma1, soma2;
+    float resultado;
+
+    printf("Digite o primeiro número inteiro: ");
+    scanf("%d", &num1);
+    printf("Digite o segundo número inteiro: ");
+    scanf("%d", &num2);
+
+    soma1 = num1 + num2;
+
+    printf("Digite o terceiro número inteiro: ");
+    scanf("%d", &num3);
+    printf("Digite o quarto número inteiro: ");
+    scanf("%d", &num4);
+
+    soma2 = num3 + num4;
+
+    if (soma2 == 0){
+        printf("Não é possível dividir por zero.\n");
+        return 1;
+    }
+
+    resultado = (float)soma1 / soma2;
+    printf("Resultado da divisão: %.2f\n", resultado);
+
+    return 0;
+}
