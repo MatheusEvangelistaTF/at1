@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int opcao;
+
+    printf("===== CARDÁPIO =====\n");
+    printf("1 - Hambúrguer\n");
+    printf("2 - Pizza\n");
+    printf("3 - Salada\n");
+    printf("4 - Suco\n");
+    printf("5 - Sorvete\n");
+    printf("====================\n");
+
+    printf("Escolha uma opção (1 a 5): ");
+    scanf("%d", &opcao);
+
+    if (opcao == 1) {
+        printf("Você escolheu: Hambúrguer\n");
+    } else if (opcao == 2) {
+        printf("Você escolheu: Pizza \n");
+    } else if (opcao == 3) {
+        printf("Você escolheu: Salada \n");
+    } else if (opcao == 4) {
+        printf("Você escolheu: Suco \n");
+    } else if (opcao == 5) {
+        printf("Você escolheu: Sorvete \n");
+    } else {
+        printf("Opção inválida. Por favor, escolha entre 1 e 5.\n");
+    }
+
+    return 0;
+}
